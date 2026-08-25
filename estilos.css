@@ -1,0 +1,60 @@
+/* CSS DOCUMENT*/
+@charset "UTF-8";
+
+/*Configuraciones generales*/
+
+@font-face {
+    font-family: "Montserrat Alternatives Normal";
+    src: url(fonts/MontserratAlternates-Regular.ttf); format: truetype;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat Alternatives Bold;
+    src: url(fonts/MontserratAlternates-Bold.ttf);format:truetype;
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Montserrat Alternatives Light;
+    src: url(fonts/MontserratAlternates-Light.ttf);format:truetype;
+    font-weight: lighter;
+    font-style: normal    
+}
+
+@font-face {
+    font-family: Montserrat Alternatives Black;
+    src: url(fonts/MontserratAlternates-Black.ttf); format: truetype;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Alternatives Normal italic";
+    src: url(fonts/MontserratAlternates-Italic.ttf);format: truetype;
+    font-weight: normal;
+    font-style: italic;
+}
+
+*{
+    body {
+    font-family: "Bitter", serif;
+    }
+}
+
+/* Acá empiezan las aplicaciones*/
+
+h1 {font-family: "Dosis", sans-serif;
+    font-weight: 800;
+    font-style: normal;    
+}
+
+h2 {font-family: "Bitter", sans-serif ;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3 {font-family: "Montserrat Alternatives Normal", sans-serif ;
+    font-size: 10;
+}
