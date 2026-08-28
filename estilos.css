@@ -4,57 +4,119 @@
 /*Configuraciones generales*/
 
 @font-face {
-    font-family: "Montserrat Alternatives Normal";
-    src: url(fonts/MontserratAlternates-Regular.ttf); format: truetype;
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: Montserrat Alternatives Bold;
-    src: url(fonts/MontserratAlternates-Bold.ttf);format:truetype;
-    font-weight: bold;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Montserrat Alternatives Light;
-    src: url(fonts/MontserratAlternates-Light.ttf);format:truetype;
-    font-weight: lighter;
-    font-style: normal    
-}
-
-@font-face {
-    font-family: Montserrat Alternatives Black;
-    src: url(fonts/MontserratAlternates-Black.ttf); format: truetype;
-    font-weight: bolder;
+    font-family: "Marcellus";
+    src: url(fonts/Marcellus-Regular.ttf) format("truetype");
+    font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Montserrat Alternatives Normal italic";
-    src: url(fonts/MontserratAlternates-Italic.ttf);format: truetype;
-    font-weight: normal;
-    font-style: italic;
-}
-
-*{
+* {
     body {
-    font-family: "Bitter", serif;
+        font-family: "Quicksand", sans-serif;
     }
 }
 
 /* Acá empiezan las aplicaciones*/
 
-h1 {font-family: "Dosis", sans-serif;
+h1 {
+    font-family: "Marcellus", serif;
     font-weight: 800;
-    font-style: normal;    
+    font-style: normal;
+    color: palevioletred;
 }
 
-h2 {font-family: "Bitter", sans-serif ;
-    font-weight: bold;
-    font-style: italic;
+h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    color: cadetblue;
+    text-indent: 30px;
 }
 
-h3 {font-family: "Montserrat Alternatives Normal", sans-serif ;
-    font-size: 10;
+h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style:normal;
+    text-indent: 40px;
+}
+
+h4 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: normal;
+    color: cadetblue;
+}
+
+/*Acá empiezan las aplicaciones*/
+
+header {
+    background-image: url(img/foto-flores-caratula.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 100px;
+    margin: 0 0 0 0;
+    background-position: center;
+
+    p {
+        font-family: "Marcellus", serif;
+        font-size: 4rem;
+        font-weight: 800;
+        font-style: normal;
+        color: aliceblue;
+        text-align: center;
+    }
+}
+
+nav {
+    color:palevioletred;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#intro {
+    background-color: rgb(255, 238, 243);
+    box-sizing: border-box;
+    border-radius: 0 0 20px;
+    padding: 5px 30px;
+}
+
+#academica {
+    padding: 5px 30px;
+
+    p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        font-style: italic;
+        text-indent: 80px;
+    }
+}
+
+#habilidades {
+    padding: 5px 30px;
+}
+
+#Proyectos {
+    padding: 5px 30px;
+}
+
+#mensaje {
+    padding: 30px;
+    background-color: rgb(255, 238, 243);
+    border-radius: 20px 20px 0 0;
+}
+
+footer{
+    padding: 5px 30px;
+    background-color: palevioletred;
+    border-radius: 0 0 20px 20px;
+}
+
+ul {
+    list-style: none;
 }
