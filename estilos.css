@@ -23,7 +23,7 @@ h1 {
     font-weight: 800;
     font-style: normal;
     color: palevioletred;
-}
+    }
 
 h2 {
     font-family: "Quicksand", sans-serif;
@@ -83,7 +83,7 @@ nav {
     box-sizing: border-box;
     border-radius: 0 0 20px;
     padding: 5px 30px;
-}
+    }
 
 #academica {
     padding: 5px 30px;
@@ -101,8 +101,16 @@ nav {
     padding: 5px 30px;
 }
 
+#titulo {
+    padding: 5px 30px;
+}
+
 #Proyectos {
     padding: 5px 30px;
+    height: 500px;
+    display: block;
+    display:flex
+   
 }
 
 #mensaje {
