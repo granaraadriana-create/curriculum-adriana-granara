@@ -13,6 +13,10 @@
 * {
     body {
         font-family: "Quicksand", sans-serif;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 }
 
@@ -23,14 +27,14 @@ h1 {
     font-weight: 800;
     font-style: normal;
     color: palevioletred;
-    }
+}
 
 h2 {
     font-family: "Quicksand", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     font-style: normal;
-    color: cadetblue;
+    color: purple;
     text-indent: 30px;
 }
 
@@ -38,7 +42,7 @@ h3 {
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    font-style:normal;
+    font-style: normal;
     text-indent: 40px;
 }
 
@@ -53,12 +57,20 @@ h4 {
 /*Acá empiezan las aplicaciones*/
 
 header {
+    height: 500px;
     background-image: url(img/foto-flores-caratula.jpg);
     background-size: cover;
     box-sizing: border-box;
-    padding: 100px;
+    padding: 0;
     margin: 0 0 0 0;
-    background-position: center;
+    background-position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #320e0ee0;
+    background-blend-mode: hard-light;
 
     p {
         font-family: "Marcellus", serif;
@@ -66,24 +78,67 @@ header {
         font-weight: 800;
         font-style: normal;
         color: aliceblue;
-        text-align: center;
+        padding: 70px;
+        max-width: 550px;
     }
 }
 
 nav {
-    color:palevioletred;
+    width: 100%;
+    height: 110px;
+    color: aliceblue;
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
+    background-color: purple;
+    background-size: cover;
+    display: grid;
+    padding: 5px 10px 15px 10px;
+    margin-top: auto;
+    line-height: 1.8rem;
+    letter-spacing: 0.078em;
+    margin-bottom: 30px;
+
+    a {
+        color: papayawhip;
+        text-decoration: none;
+        display: block
+    }
 }
 
-#intro {
+/*SECCIONES*/
+
+.intro {
+    height: 450px;
     background-color: rgb(255, 238, 243);
     box-sizing: border-box;
     border-radius: 0 0 20px;
     padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        max-width: 500px;
+        font-size: 0.98rem;
+        line-height: 1.4;
+        letter-spacing: 0em;
+        padding: 20px;
+        text-align: center;
+        margin: 0 0 16px 0;
     }
+}
+
+.hola {
+    width: 100%;
+}
+
+#yo {
+    border-radius: 50%;
+    margin: 50px 50px 0 50px;
+    padding: 20px;
+}
 
 #academica {
     padding: 5px 30px;
@@ -101,16 +156,24 @@ nav {
     padding: 5px 30px;
 }
 
+#Proyectos {
+    padding: 5px 30px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
 #titulo {
     padding: 5px 30px;
 }
 
-#Proyectos {
-    padding: 5px 30px;
-    height: 500px;
-    display: block;
-    display:flex
-   
+.imagen {
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
 
 #mensaje {
@@ -119,7 +182,7 @@ nav {
     border-radius: 20px 20px 0 0;
 }
 
-footer{
+footer {
     padding: 5px 30px;
     background-color: palevioletred;
     border-radius: 0 0 20px 20px;
