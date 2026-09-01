@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <p>Adriana Andrea Granara</p>
+        <p>Adriana Andrea Granara</p> <!--este es el título más importante de tu página, hay una etiqueta específica de títulos para esto-->
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Editorial</a>
@@ -33,7 +33,7 @@
         </section>
         <section id="academica">
             <h1>Formación Académica</h1>
-            <h2>Licenciatura en Diseño y Comunicación Visual (67%)</h2>
+            <h2>Licenciatura en Diseño y Comunicación Visual (67%)</h2> <!--este bloque podría estar mejor semánticamente estructurado con listas, como tip podés incluir más de un elemento dentro de una li, pero no es correcto que tenga semántica de título un elemento que es un dato-->
             <h3>2021-actualidad</h3>
             <h2>FotoTaller Monte Grande</h2>
             <h3>2019-2020</h3>
@@ -50,8 +50,8 @@
                 <li>Illustrator</li>
                 <li>Sketchbook</li>
                 <li>Paquete Office</li>
-                <li>Herramientas de Trabajo colaborativo en línea</li>
-                <li>Figma y Ghithub</li>
+                <li>Herramientas de Trabajo colaborativo en línea</li> <!--trabajo va con minus en este caso-->
+                <li>Figma y Ghithub</li> <!--Se escribe GitHub-->
                 <li>HTML y CSS</li>
             </ul>
             <h1>Aptitudes</h1>
@@ -62,13 +62,13 @@
             </ul>
         </section>
        <section>
-            <h1 id="titulo">Proyectos Destacados</h1>
+            <h1 id="titulo">Proyectos Destacados</h1> <!--la etiqueta h1 se utiliza una única vez por sitio web y representa el nombre de la página web o el título, es raro encontrarlo tan abajo en una página y además repetido varias veces. por otro lado también es erroneo sintácticamente ponerle un id "título" a una etiqueta que se llama "título" como a todas las haches, creo que si querés diferenciar sería la section con un id/class y desde css llamarlo con el id+h -->
        </section>
-        <section id="Proyectos">
-            <img class="imagen" src="img/afiche-el-perro-que-no-calla.jpg" alt="afiche-el-perro-que-no-calla" height="250" />
+        <section id="Proyectos"> <!--guarda el indentado, además los ids no se nombran con mayúsculas-->
+            <img class="imagen" src="img/afiche-el-perro-que-no-calla.jpg" alt="afiche-el-perro-que-no-calla" height="250" /> <!--en esta sección te van a venir bien los divs, también podés probar con la etiqueta "figure" y "figcaption"-->
             <h4>Afiche de Cine</h4>
             <p>El Perro que no Calla, de Ana Katz</p>
-            <img class="imagen" src="img/A-tu-salud.jpg" alt="A-tu-salud" height="250" />
+            <img class="imagen" src="img/A-tu-salud.jpg" alt="A-tu-salud" height="250" /> <!--así no se escriben los nombres de los archivos!!! también te falta el ancho de la imagen, no es sólo el alto, lo mismo en todas estas imágenes-->
             <h4>Proyecto Editorial</h4>
             <p>A tu Salud, mi kümeleam, compedio de hierbas como medicina ancestral</p>
             <img class="imagen" src="img/conjunto-mock-up.jpg" alt="conjunto-fasciculo-mock-up" height="250" />
@@ -90,7 +90,7 @@
         <p>Mis redes</p>
         <ul>
             <li>
-                <a href="https://www.instagram.com/picturingaround/">Instagram de Fotografía</a>
+                <a href="https://www.instagram.com/picturingaround/">Instagram de Fotografía</a> <!--sumale el atributo target="_blank" para que los links se abran en otras pestañas y no se pierda tu página-->
             </li>
             <li>
                 <a href="https://www.instagram.com/a.adrus/">Instagram Personal</a>

@@ -11,6 +11,7 @@
 }
 
 * {
+    /*aca se escribe margin y padding si los querés para aplicar a todo, igual que la font family*/
     body {
         font-family: "Quicksand", sans-serif;
         font-size: 1rem;
@@ -62,7 +63,7 @@ header {
     background-size: cover;
     box-sizing: border-box;
     padding: 0;
-    margin: 0 0 0 0;
+    margin: 0 0 0 0; /* con un sólo cero alcanza, y es una propiedad que aplicaría a todo desde el selector universal por fuera de body*/
     background-position: inherit;
     display: flex;
     flex-direction: column;
@@ -93,7 +94,7 @@ nav {
     font-style: normal;
     background-color: purple;
     background-size: cover;
-    display: grid;
+    display: grid; /*no usamos grid! sólo flexbox por ahora*/
     padding: 5px 10px 15px 10px;
     margin-top: auto;
     line-height: 1.8rem;
