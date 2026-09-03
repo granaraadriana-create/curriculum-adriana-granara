@@ -3,21 +3,14 @@
 
 /*Configuraciones generales*/
 
-@font-face {
-    font-family: "Marcellus";
-    src: url(fonts/Marcellus-Regular.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-
 * {
-    /*aca se escribe margin y padding si los querés para aplicar a todo, igual que la font family*/
+    box-sizing: border-box;
+
     body {
         font-family: "Quicksand", sans-serif;
         font-size: 1rem;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
 }
 
@@ -25,68 +18,49 @@
 
 h1 {
     font-family: "Marcellus", serif;
+    font-size: 4rem;
     font-weight: 800;
     font-style: normal;
-    color: palevioletred;
+    color: aliceblue;
+    padding: 40px 30px 30px 30px;
+    max-width: 550px;
 }
 
 h2 {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-family: "Marcellus", serif;
+    font-weight: 800;
     font-style: normal;
-    color: purple;
-    text-indent: 30px;
+    color: palevioletred;
+    width: 100%;
 }
 
 h3 {
     font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    font-style: normal;
-    text-indent: 40px;
-}
-
-h4 {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     font-style: normal;
     color: cadetblue;
 }
 
-/*Acá empiezan las aplicaciones*/
-
 header {
     height: 500px;
     background-image: url(img/foto-flores-caratula.jpg);
     background-size: cover;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0 0 0 0; /* con un sólo cero alcanza, y es una propiedad que aplicaría a todo desde el selector universal por fuera de body*/
-    background-position: inherit;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
     align-items: center;
     background-color: #320e0ee0;
     background-blend-mode: hard-light;
-
-    p {
-        font-family: "Marcellus", serif;
-        font-size: 4rem;
-        font-weight: 800;
-        font-style: normal;
-        color: aliceblue;
-        padding: 70px;
-        max-width: 550px;
-    }
 }
 
 nav {
     width: 100%;
-    height: 110px;
+    height: 150px;
     color: aliceblue;
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
@@ -94,12 +68,13 @@ nav {
     font-style: normal;
     background-color: purple;
     background-size: cover;
-    display: grid; /*no usamos grid! sólo flexbox por ahora*/
-    padding: 5px 10px 15px 10px;
-    margin-top: auto;
-    line-height: 1.8rem;
-    letter-spacing: 0.078em;
-    margin-bottom: 30px;
+    letter-spacing: 0.090em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0 15px 0;
+
 
     a {
         color: papayawhip;
@@ -110,8 +85,8 @@ nav {
 
 /*SECCIONES*/
 
-.intro {
-    height: 450px;
+#intro {
+    height: 440px;
     background-color: rgb(255, 238, 243);
     box-sizing: border-box;
     border-radius: 0 0 20px;
@@ -125,56 +100,73 @@ nav {
         font-size: 0.98rem;
         line-height: 1.4;
         letter-spacing: 0em;
-        padding: 20px;
+        padding: 20px 0;
         text-align: center;
-        margin: 0 0 16px 0;
+        margin: 20px 0 20px 0;
+        min-width: 344px;
     }
-}
-
-.hola {
-    width: 100%;
 }
 
 #yo {
     border-radius: 50%;
     margin: 50px 50px 0 50px;
-    padding: 20px;
 }
 
 #academica {
     padding: 5px 30px;
+    min-width: 220px;
+    min-width: 220px;
+}
 
-    p {
-        font-family: "Quicksand", sans-serif;
-        font-size: 1rem;
-        font-weight: 300;
-        font-style: italic;
-        text-indent: 80px;
-    }
+.institucion {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: bold;
+    color: purple;
+    min-width: 220px;
+}
+
+.año {
+    font-family: "Marsellus", serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    text-indent: 30px;
+    color: purple;
+    min-width: 220px;
+}
+
+.info {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    text-indent: 40px;
+    min-width: 220px;
 }
 
 #habilidades {
     padding: 5px 30px;
+    line-height: 25px;
+    min-width: 220px;
 }
 
-#Proyectos {
+#proyectos {
     padding: 5px 30px;
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 15px;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 5px;
+    flex-wrap: wrap;
+    min-width: 220px;
 }
 
-#titulo {
-    padding: 5px 30px;
-}
-
-.imagen {
-    display: flex;
-    align-items: center;
-    text-align: left;
+figcaption {
+    max-width: 200px;
+    line-height: 22px;
 }
 
 #mensaje {

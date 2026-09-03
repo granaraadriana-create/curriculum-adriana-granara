@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <p>Adriana Andrea Granara</p> <!--este es el título más importante de tu página, hay una etiqueta específica de títulos para esto-->
+        <h1>Adriana Andrea Granara</h1>
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Editorial</a>
@@ -25,63 +25,66 @@
         </nav>
     </header>
     <main>
-        <section class="intro">
+        <section id="intro">
             <img id="yo" src="img/mi-foto.jpg" alt="mi-foto" width="175" height="175" />
             <p>Mi nombre es Adriana Granara, futura diseñadora y comunicadora visual. Aficionada de la fotografía y la
                 ilustración. He hecho varios cursos de fotografía, ejercido como profesión y actualmente me encuentro
                 cursando la Licenciatura de Diseño y Comunicación Visual en la Universidad Nacional de Lanús (UNLa)</p>
         </section>
         <section id="academica">
-            <h1>Formación Académica</h1>
-            <h2>Licenciatura en Diseño y Comunicación Visual (67%)</h2> <!--este bloque podría estar mejor semánticamente estructurado con listas, como tip podés incluir más de un elemento dentro de una li, pero no es correcto que tenga semántica de título un elemento que es un dato-->
-            <h3>2021-actualidad</h3>
-            <h2>FotoTaller Monte Grande</h2>
-            <h3>2019-2020</h3>
-            <p>Uso de Flash para fotografía de estudio</p>
-            <h2>Escuela de Fotografía Fullframe</h2>
-            <h3>2018-2019</h3>
-            <p>Nivel General Intermedio y Avanzado</p>
+            <h2>Formación Académica</h2>
+            <ul>
+                <p class="institucion">Licenciatura en Diseño y Comunicación Visual</p>
+                <p class="año">2021-actualidad</p>
+                <p class="info">26/38 materias aprobadas (67%)</p>
+                <p class="institucion">FotoTaller Monte Grande</p>
+                <p class="año">2019-2020</p>
+                <p class="info">Uso de Flash para fotografía de estudio</p>
+                <p class="institucion">Escuela de Fotografía Fullframe</p>
+                <p class="año">2018-2019</p>
+                <p class="info">Nivel General Intermedio y Avanzado</p>
+            </ul>
         </section>
         <section id="habilidades">
-            <h1>Habilidades Informáticas</h1>
+            <h2>Habilidades Informáticas</h2>
             <ul>
                 <li>Photoshop</li>
                 <li>InDesign</li>
-                <li>Illustrator</li>
                 <li>Sketchbook</li>
-                <li>Paquete Office</li>
-                <li>Herramientas de Trabajo colaborativo en línea</li> <!--trabajo va con minus en este caso-->
-                <li>Figma y Ghithub</li> <!--Se escribe GitHub-->
+                <li>Herramientas de trabajo colaborativo en línea</li>
+                <li>Figma y Github</li>
                 <li>HTML y CSS</li>
             </ul>
-            <h1>Aptitudes</h1>
+            <h2>Aptitudes</h2>
             <ul>
                 <li>Organización y gestión de recursos</li>
                 <li>Proactividad y buena predisposición al trabajo en equipo</li>
                 <li>Atención a los detalles</li>
             </ul>
         </section>
-       <section>
-            <h1 id="titulo">Proyectos Destacados</h1> <!--la etiqueta h1 se utiliza una única vez por sitio web y representa el nombre de la página web o el título, es raro encontrarlo tan abajo en una página y además repetido varias veces. por otro lado también es erroneo sintácticamente ponerle un id "título" a una etiqueta que se llama "título" como a todas las haches, creo que si querés diferenciar sería la section con un id/class y desde css llamarlo con el id+h -->
-       </section>
-        <section id="Proyectos"> <!--guarda el indentado, además los ids no se nombran con mayúsculas-->
-            <img class="imagen" src="img/afiche-el-perro-que-no-calla.jpg" alt="afiche-el-perro-que-no-calla" height="250" /> <!--en esta sección te van a venir bien los divs, también podés probar con la etiqueta "figure" y "figcaption"-->
-            <h4>Afiche de Cine</h4>
-            <p>El Perro que no Calla, de Ana Katz</p>
-            <img class="imagen" src="img/A-tu-salud.jpg" alt="A-tu-salud" height="250" /> <!--así no se escriben los nombres de los archivos!!! también te falta el ancho de la imagen, no es sólo el alto, lo mismo en todas estas imágenes-->
-            <h4>Proyecto Editorial</h4>
-            <p>A tu Salud, mi kümeleam, compedio de hierbas como medicina ancestral</p>
-            <img class="imagen" src="img/conjunto-mock-up.jpg" alt="conjunto-fasciculo-mock-up" height="250" />
-            <img class="imagen" src="img/caja-mock-up.jpg" alt="caja-mock-up" height="250" />
-            <h4>Fascículo Tipográfico</h4>
-            <p>Fundidora TipoType en estilo Art Decó</p>
-            <img class="imagen" src="img/Matchea-tu-receta.png" alt="Matchea-tu-receta" height="250" />
-            <h4>Fascículo Tipográfico</h4>
-            <p>Recetario</p>
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <article id="proyectos">
+                <figure>
+                    <img class="imagen" src="img/afiche-el-perro-que-no-calla.jpg" alt="afiche-el-perro-que-no-calla"
+                        width="177" height="250px" />
+                    <figcaption>
+                        <h3>Afiche de Cine</h3>
+                        <p>El Perro que no Calla, de Ana Katz</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/a-tu-salud.jpg" alt="a-tu-salud" width="333" height="250"/>
+                    <figcaption>
+                        <h3>Proyecto Editorial</h3>
+                        <p>A tu Salud, mi kümeleam, compedio de hierbas como medicina ancestral</p>
+                    </figcaption>
+                </figure>
+            </article>
         </section>
         <section id="mensaje">
-            <h1>¿Dudas, sugerencias o querés avanzar con un proyecto?</h1>
-            <h2>¡Pongámonos en contacto!</h2>
+            <h2>¿Dudas, sugerencias o querés avanzar con un proyecto?</h2>
+            <h3>¡Pongámonos en contacto!</h3>
             <a href="#">Enviar mensaje</a>
         </section>
     </main>
@@ -90,10 +93,10 @@
         <p>Mis redes</p>
         <ul>
             <li>
-                <a href="https://www.instagram.com/picturingaround/">Instagram de Fotografía</a> <!--sumale el atributo target="_blank" para que los links se abran en otras pestañas y no se pierda tu página-->
+                <a href="https://www.instagram.com/picturingaround/" target="_blank">Instagram de Fotografía</a>
             </li>
             <li>
-                <a href="https://www.instagram.com/a.adrus/">Instagram Personal</a>
+                <a href="https://www.instagram.com/a.adrus/" target="_blank">Instagram Personal</a>
             </li>
         </ul>
         <p>Todos los derechos reservados. Agosto 2026</p>
