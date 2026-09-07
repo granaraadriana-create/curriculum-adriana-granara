@@ -24,7 +24,6 @@ h1 {
     color: aliceblue;
     min-width: 30.0625rem;
     max-width: 34.375rem;
-    margin: 4rem 0;
 }
 
 h2 {
@@ -43,7 +42,6 @@ h3 {
 }
 
 header {
-    height: 35vh;
     background-image: url(img/foto-flores-caratula.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,6 +54,7 @@ header {
     align-items: center;
     background-color: #320e0ee0;
     background-blend-mode: hard-light;
+    gap: 10px;
 }
 
 nav {
